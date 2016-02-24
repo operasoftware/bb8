@@ -1,0 +1,113 @@
+* {
+	-webkit-tap-highlight-color: transparent;
+}
+
+html, button {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+	font-family: sans-serif;
+}
+
+html {
+	background: #282c37;
+}
+
+h1,
+main,
+div {
+	padding: 1rem;
+}
+
+main,
+div {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+}
+
+main {
+	background: linear-gradient(#444957, #282c38);
+}
+
+h1 {
+	text-align: center;
+	font-size: 1.5rem;
+	margin-bottom: 0;
+}
+
+h1 span {
+	display: inline-block;
+	padding-bottom: 0.5em;
+	border-bottom: 3px solid #f2712e;
+}
+
+button {
+	background: #2f453f;
+	border: 1px solid #628068;
+	border-radius: 58px;
+	padding: 1em 3em;
+}
+
+.button-connect {
+	background: #2f453f;
+	border-color: #628068;
+}
+
+.button-stop {
+	background: #751729;
+	border-color: #8a161c;
+}
+
+.button-aim {
+	background: #4b505d;
+	border-color: #848790;
+}
+
+.button-led {
+	text-indent: -9999em;
+	overflow: hidden;
+	border-radius: 50%;
+	padding: 0;
+	width: 3em;
+	height: 3em;
+	border-color: #6f737d;
+	position: relative;
+	z-index: 10;
+	background: transparent;
+}
+
+.button-led::before {
+	border-radius: 50%;
+	content: '';
+	display: block;
+	position: absolute;
+	z-index: -1;
+	top: 5px;
+	left: 5px;
+	right: 5px;
+	bottom: 5px;
+	/*border:5px solid orange;*/
+}
+
+.button-led-red::before {
+	background: #fa2e2e;
+}
+
+.button-led-green::before {
+	background: #6df99a;
+}
+
+.button-led-blue::before {
+	background: #58a7e2;
+}
+
+.button-led-off::before {
+	background: #9fa2a9;
+}
+
+.active {
+	background: #58a7e2;
+}
