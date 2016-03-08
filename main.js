@@ -2,6 +2,13 @@
 
 	'use strict';
 
+	if (
+		location.hostname.endsWith('.github.io') &&
+		location.protocol != 'https:'
+	) {
+		location.protocol = 'https:';
+  }
+
 	const elConnect = document.querySelector('#connect');
 	const elStop = document.querySelector('#stop');
 	const elAim = document.querySelector('#aim');
