@@ -186,7 +186,7 @@
 		})
 		.then(device => {
 			console.log('Got device: ' + device.name);
-			return device.connectGATT();
+			return device.gatt.connect();
 		})
 		.then(server => {
 			console.log('Got server');
